@@ -21,6 +21,9 @@
     "service_worker": "background.js",
     "scripts": ["background.js"]
   },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'"
+  },
   "permissions": [
     "activeTab",
     "storage",
